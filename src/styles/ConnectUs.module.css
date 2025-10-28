@@ -1,0 +1,272 @@
+.mainContaier {
+  width: 100%;
+  background-color: #fff;
+}
+
+.coonetUsimg {
+  width: 100%;
+  height: 430px;
+  overflow: hidden;
+}
+
+.coonetUsimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  filter: brightness(0.5);
+  object-position: center -200px;
+  position: relative;
+}
+
+@media screen and (max-width: 933px) {
+  .coonetUsimg img {
+    object-position: center -100px;
+  }
+}
+
+.connetUsContet {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+  color: #fff;
+  padding: 1rem;
+  z-index: 2;
+}
+
+.connetUsContet h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #f4d48f;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.connetUsContet p {
+  font-size: 1.25rem;
+  color: #fefefe;
+  line-height: 1.8rem;
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .connetUsContet h2 {
+    font-size: 2rem;
+  }
+
+  .connetUsContet p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .connetUsContet h2 {
+    font-size: 1.4rem;
+  }
+
+  .connetUsContet p {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+}
+
+.cardFormContent {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.cardForm {
+  width: 100%;
+  /* background: linear-gradient(135deg, #fffaf4, #ffffff); */
+  background: linear-gradient(135deg, #f0dcbf, #faeee0);
+
+  padding-block: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== INNER WRAPPER ===== */
+.cardFormContent {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6rem;
+  max-width: 1100px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* ===== LEFT SIDE : CONTACT CARDS ===== */
+.contactCards {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.8rem 1.5rem;
+  text-align: center;
+  border: 1px solid #f2e9dc;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.card svg {
+  font-size: 2.2rem;
+  color: #c59a5f;
+  margin-bottom: 0.6rem;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.3rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* ===== RIGHT SIDE : CONTACT FORM ===== */
+.connectForm {
+  flex: 1.1;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem 1.8rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f3e9d8;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 460px; /* ✅ form thoda chhota aur elegant */
+  margin: 0 auto;
+}
+
+.connectForm input,
+.connectForm textarea {
+  width: 90%;
+  padding: 0.85rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: "Poppins", sans-serif;
+  background-color: #fffefb;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.connectForm input:focus,
+.connectForm textarea:focus {
+  border-color: #c59a5f;
+  box-shadow: 0 0 4px rgba(197, 154, 95, 0.25);
+}
+
+.connectForm textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.connectForm button {
+  background: #c59a5f;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.9rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  width: 40%;
+  margin-top: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.connectForm button:hover {
+  background-color: #a67b3e;
+  transform: translateY(-2px);
+}
+
+.connectForm h1 {
+  color: #c59a5f;
+  font-size: 2.3rem;
+  font-weight: 500;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 950px) {
+  .cardFormContent {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .contactCards,
+  .connectForm {
+    width: 100%;
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .connectForm {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .connectForm button {
+    width: 60%;
+  }
+
+  .contactCards,
+  .connectForm {
+    width: 100%;
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .connectForm h1 {
+    font-size: 1.9rem;
+  }
+}
+
+.map {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.mapContainer {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.mainContaier iframe {
+  border-radius: 10px;
+}

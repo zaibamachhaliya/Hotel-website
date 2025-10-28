@@ -1,0 +1,231 @@
+nav {
+  height: 16vh;
+  background-color: rgba(150, 150, 150, 0.6);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid wheat;
+  width: 100%;
+  z-index: 100;
+}
+
+.navContainer {
+  max-width: 1150px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navContainer .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 90px;
+  background-color: transparent;
+}
+
+.navLinks > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.navLinks > ul > li {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  transition: 0.2s ease-in-out;
+  padding-block: 2rem;
+}
+
+.navLinks > ul > li > a {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+.navLinks > ul > li > a:hover {
+  color: #ff8c42;
+  transition: 0.2s ease-in-out;
+}
+
+.navLinks > ul > li:hover {
+  color: #ff8c42;
+  transition: 0.2s ease-in-out;
+}
+
+.headerButoon button {
+  background: linear-gradient(135deg, wheat, #ecc997, #ff8c42);
+  color: #1a1a1a;
+  padding: 0.7rem 0.9rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 900 !important;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Playfair Display", serif;
+}
+
+.headerButoon button:hover {
+  background: linear-gradient(135deg, #ff8c42, #ecc997, wheat);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.nestedUl {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 2rem;
+  gap: 1rem;
+  background-color: wheat;
+  color: #1a1a1a;
+  /* top: 18.5%; */
+  margin-top: 0.5rem;
+  border-top: 4px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(135deg, #ff8c42, #ecc997, wheat);
+  z-index: 100;
+  display: none;
+  transform: translateY(20px);
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.nestedUl li {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0;
+  transition: 0.2s ease-in-out;
+}
+
+.nestedUl li:hover {
+  color: #ff8c42;
+  transition: 0.2s ease-in-out;
+}
+
+.dropdownLi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.dropdownLi svg {
+  font-size: 1.7rem;
+}
+
+.dropdownParent:hover .nestedUl {
+  display: flex;
+  transition: 0.3s ease-in-out;
+  transform: translateY(0);
+}
+
+.menuIcon {
+  color: wheat;
+}
+
+.menuIcon svg {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.navItem {
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.navItem:hover {
+  color: #ff8c42;
+}
+
+@media screen and (max-width: 1211px) {
+  .navLinks,
+  .headerButoon {
+    display: none;
+  }
+
+  .menuIcon svg {
+    display: block;
+  }
+
+  .active {
+    display: block;
+    position: absolute;
+    top: 100%;
+    background-color: wheat;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .active .dropdownLi {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .active > ul {
+    padding: 1rem;
+    padding-inline: 2rem;
+    display: flex;
+    flex-direction: column;
+    /* gap: 1rem; */
+    font-size: 1.1rem;
+  }
+
+  .active .nestedUl {
+    display: flex;
+    background-color: #faefd5;
+    border: 0;
+    position: static;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+    transform: translateY(0);
+    margin-block: 0.5rem;
+  }
+
+  .active .nestedUl li {
+    font-size: 1rem;
+  }
+
+  .active > ul > li {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    transition: 0.2s ease-in-out;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-block: 1rem;
+    padding-inline: 0.7rem;
+  }
+
+  .active > ul > li > a {
+    color: #1a1a1a;
+    text-decoration: none;
+  }
+
+  .active > ul > li > a:hover {
+    color: #ff8c42;
+    transition: 0.2s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    height: 18.5vh;
+  }
+}
+
+
+
+.roomLink {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.activeRoomLink {
+  color: #ff8c42;
+  font-weight: bold;
+}

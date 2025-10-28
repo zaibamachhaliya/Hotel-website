@@ -1,0 +1,121 @@
+.topbar {
+  height: 8vh;
+  background-color: wheat;
+  font-family: "Poppins", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.topbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1150px;
+  height: 100%;
+  margin: 0 auto;
+  
+}
+
+.topbarLinks a{
+color: #333;
+text-decoration: none;
+}
+
+.phoneEmail {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.phonenumber,
+.email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbarLinks ul {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  gap: 2.4rem;
+}
+
+.phonenumber {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.phonenumber span svg {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.phonenumber p {
+  font-weight: bold;
+}
+
+.email {
+  display: flex;
+  gap: 5px;
+}
+
+.email span {
+  display: flex;
+}
+
+.email span svg {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.socailIcon {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  gap: 0.5rem;
+}
+
+.socailIcon span {
+  display: flex;
+}
+
+.socailIcon span svg{
+    font-size: 1.2rem;
+} 
+
+.socailIcon span {
+  display: flex;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+
+.socailIcon span:hover {
+  animation: jump 0.6s;
+}
+
+
+@keyframes jump {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-15px); } 
+  50%  { transform: translateY(5px); }  
+  70%  { transform: translateY(-7px); } 
+  100% { transform: translateY(0); }    
+}
+
+
+.socailIcon span svg {
+  font-size: 1.4rem; 
+  transition: transform 0.3s; 
+} 
+
+@media screen and (max-width: 1211px) {
+  .topbar{
+    display:none;
+  }
+}

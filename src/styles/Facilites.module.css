@@ -1,0 +1,141 @@
+.facilitesHading h1 {
+  font-family: "Marcellus";
+  color: #292929;
+  font-weight: 500;
+  font-size: xxx-large;
+  margin: 0;
+}
+
+.facilitesHading {
+  text-align: center;
+  padding-block: 3.5rem;
+}
+
+.facilitesHading p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  opacity: 0.7;
+  margin-top: 1.2rem;
+}
+
+.facilitesHadingContainer {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.facilitesHading img {
+  width: 400px;
+  height: 40px;
+}
+
+.fcilitePhotosSection {
+  width: 100%;
+  padding-top: 1rem;
+  height: auto;
+  background: #fff;
+}
+
+.facilitesPhotosContainer {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 2.5rem;
+}
+
+.facilitesCard {
+  width: 30%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.facilitesCard img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.facilitesCard p {
+  font-size: 20px;
+  color: #222;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.facilitesCard:hover {
+  transform: translateY(-5px);
+  /* box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); */
+}
+
+.facilitesCard img:hover {
+  filter: brightness(0.8);
+}
+
+
+@media screen and (max-width: 1220px) {
+  .fcilitePhotosSection {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .facilitesCard {
+    width: 45%;
+  }
+
+  .facilitesHadingContainer {
+    width: 80%;
+  }
+
+  .facilitesHadingContainer h1 {
+    font-size: 2rem;
+  }
+
+  .facilitesHadingContainer p {
+    font-size: 1rem;
+  }
+
+  .facilitesHadingContainer img {
+    width: 300px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .facilitesCard {
+    width: 100%;
+  }
+
+  .facilitesCard img {
+    height: 300px;
+  }
+
+  .facilitesCard p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width:450px){
+    .facilitesHadingContainer h1{
+        font-size: 1.3rem;
+    }
+
+    .facilitesHadingContainer p{
+        font-size: 0.9rem;
+    }
+
+    .facilitesHadingContainer img{
+        width: 200px;
+    }
+
+    .facilitesHadingContainer{
+        width: 90%;
+    }
+}

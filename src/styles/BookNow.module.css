@@ -1,0 +1,29 @@
+.BookNow {
+  display: none;
+  position: fixed;
+  bottom: 18px;
+  left: 18px;
+  background: #e67e22;
+  color: #fff;
+  cursor: pointer;
+  z-index: 999;
+  border-radius: 50px;
+  
+}
+
+.BookNow button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  padding: 0.7rem 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .BookNow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

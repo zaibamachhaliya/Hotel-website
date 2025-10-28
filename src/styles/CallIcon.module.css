@@ -1,0 +1,20 @@
+.callFloatingBtn {
+  display: none;
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  background: #e67e22;
+  color: #fff;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999;
+}
+
+@media (max-width: 768px) {
+  .callFloatingBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
