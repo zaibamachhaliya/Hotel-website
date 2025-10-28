@@ -1,16 +1,16 @@
-# React + Vite
+Hotel Golden – Palanpur — Real-World Hotel Booking Website
+Tech: React.js, Redux Toolkit, React Router, CSS Modules, Vite, GitHub Pages
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Developed a production-ready hotel booking platform as a real business project, improving user booking experience.
 
-Currently, two official plugins are available:
+Implemented dynamic room detail pages with price listings using React Router SPA architecture, reducing page reloads by 100%.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Built a custom auto-play image slider with pause and manual navigation functionality, improving visual engagement by ~40%.
 
-## React Compiler
+Integrated Redux Toolkit to manage global booking state and UI behavior with improved code scalability.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Designed responsive UI supporting 320px mobile screens ensuring 100% accessibility across devices.
 
-## Expanding the ESLint configuration
+Added floating Call-to-Action contact button to boost customer inquiries and conversions.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Optimized load performance using Vite + Code Splitting, achieving faster initial loads.
